@@ -1,3 +1,5 @@
+import reactLogo from './assets/react.svg'""
+
 function EmployeeSearchResult() {
 
     return (
