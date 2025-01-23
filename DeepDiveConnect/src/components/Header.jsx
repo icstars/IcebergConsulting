@@ -1,20 +1,15 @@
 
-function Header() {
+export default function Header() {
 
     return (
         <>
             <header>
             <div>
-                <img className="logo" src="images/thresholds.svg" alt="Thresholds logo" />
+                <img className="logo" src="public/images/thresholds.svg" alt="Thresholds logo"/>
             </div>
-            
-                Header
-
             </header>
         </>
     )
 
 
 }
-
-export default Header;
