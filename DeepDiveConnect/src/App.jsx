@@ -1,15 +1,11 @@
-import './App.css'
+import "./App.css";
 
 function App() {
-  
   return (
-    <>
-      <h1>DeepDive</h1>
-       <p className="read-the-docs">
-        Information
-      </p>
-    </>
-  )
+    <div className="middle">
+       <h1>Here it goes the text</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
