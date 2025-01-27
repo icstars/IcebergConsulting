@@ -5,10 +5,10 @@ import App from './App.jsx'
 
 createRoot(document.getElementById("root")).render(
   <>
-    <NavBar />
+    {/* <NavBar />
     <br>
-    </br>
+    </br> */}
     <App />
-    <FootIcons />
+    {/* <FootIcons /> */}
   </>
 );
