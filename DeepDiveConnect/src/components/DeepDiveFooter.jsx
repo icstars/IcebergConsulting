@@ -6,7 +6,7 @@ function FootIcons() {
       <footer>Space for the icons</footer>
       <img
         className="avatar"
-        src="/public/images/homeicon.png"
+        src="src/assets/images/homeicon.png"
         alt="Lin Lanying"
         width={50}
         height={50}
