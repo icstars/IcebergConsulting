@@ -2,16 +2,10 @@ import { useState } from "react";
 
 function FootIcons() {
   return (
-    <>
-      <footer>Space for the icons</footer>
-      <img
-        className="avatar"
-        src="src/assets/images/homeicon.png"
-        alt="Lin Lanying"
-        width={50}
-        height={50}
-      />
-    </>
+    <div className="rightNav">
+      <input type="text" name="search" id="search" />
+      <button class="btn btn-sm">Search</button>
+    </div>
   );
 }
 export default FootIcons;

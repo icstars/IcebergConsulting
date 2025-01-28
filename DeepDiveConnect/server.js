@@ -9,16 +9,16 @@ app.get('/', (req, res) => {
     res.send('Home');
 })
 
-app.get('/profile', (req, res) => {
-    res.send('User Profile');
+app.get('/locations', (req, res) => {
+    res.send('Locations');
 })
 
 app.get('/contacts', (req, res) => {
     res.send('Contact Cards');
 })
 
-app.get('/settings', (req, res) => {
-    res.send('Settings');
+app.get('/resources', (req, res) => {
+    res.send('Resources');
 })
 
 app.listen(port, () => {

@@ -1,15 +1,22 @@
-import './App.css'
+import { useState } from 'react';
+import Sidebar from './components/Sidebar';
+import ProfileSettings from './components/ProfileSettings';
+import ChatBot from './components/ChatBot';
+import styles from './App.module.css';
 
-function App() {
-  
+export default function App() {
+  const [isLeftOpen, setIsLeftOpen] = useState(true);
+  const [isRightOpen, setIsRightOpen] = useState(true);
+
   return (
-    <>
-      <h1>DeepDive</h1>
-       <p className="read-the-docs">
-        Information
-      </p>
-    </>
-  )
-}
+    <div className={styles.appContainer}>
+      <Sidebar isOpen={isLeftOpen} toggle={() => setIsLeftOpen(!isLeftOpen)} />
+      
+      <main className={styles.mainContent}>
+        <ChatBot />
+      </main>
 
-export default App
+      <ProfileSettings isOpen={isRightOpen} toggle={() => setIsRightOpen(!isRightOpen)} />
+    </div>
+  );
+}

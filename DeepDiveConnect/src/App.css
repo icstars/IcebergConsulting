@@ -1,4 +1,4 @@
-/*CSS for Full Page*/
+CSS for Full Page
 
 #root {
   max-width: 1280px;
@@ -48,4 +48,17 @@
 
 .read-the-docs {
   color: #888;
+
+  
+}
+
+.middle{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 500px;
+}
+
+.rightNav{
+    align-items: center;
 }
