@@ -1,21 +1,30 @@
+/*CSS for Full Page*/
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
   text-align: center;
 }
 
+/*CSS for SearchBar*/
+
+.input-wrapper {
+  background-color: #ffff;
+}
+
+#search-icon {
+  width: 15px;
+  height: 10px;
+}
+
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
   will-change: filter;
   transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
