@@ -1,5 +1,4 @@
-CSS for Full Page
-
+/* CSS for Full App */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -8,7 +7,6 @@ CSS for Full Page
 }
 
 /*CSS for SearchBar*/
-
 .input-wrapper {
   background-color: #ffff;
 }
@@ -18,7 +16,7 @@ CSS for Full Page
   height: 10px;
 }
 
-
+/* CSS for Logo */
 .logo {
   align-items: center;
   justify-content: center;
@@ -27,19 +25,17 @@ CSS for Full Page
   transition: filter 300ms;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* CSS for Contact and Location Cards */
+.contact-card {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #000;
+  background-color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.location-card {
+  border-style: solid;
+  border-radius: 15px;
 }
 
 .card {
@@ -48,8 +44,6 @@ CSS for Full Page
 
 .read-the-docs {
   color: #888;
-
-  
 }
 
 .middle{

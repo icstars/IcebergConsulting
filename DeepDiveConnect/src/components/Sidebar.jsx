@@ -9,10 +9,10 @@ export default function Sidebar({ isOpen, toggle }) {
         <FiMenu size={24} />
       </button>
       {<ul>
-        <li>hola</li>
-        <li>que mas</li>
-        <li>como</li>
-        <li>te ha ido</li>
+        <li>Contacts</li>
+        <li>Locations</li>
+        <li>Clinical Resources</li>
+        <li>Policy</li>
       </ul>
       }
     </div>
