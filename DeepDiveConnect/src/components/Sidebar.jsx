@@ -1,25 +1,26 @@
-import { FiMenu } from 'react-icons/fi';
-import PropTypes from 'prop-types';
-import styles from './Sidebar.module.css';
+import { FiMenu } from "react-icons/fi";
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PropTypes from "prop-types";
+import styles from "./Sidebar.module.css";
+// import App from "../App";
+// import Contacts from "../pages/contacts";
+// import Location from "../pages/location";
+// import Resources from "../pages/resources";
 
 export default function Sidebar({ isOpen, toggle }) {
   return (
-    <div className={`${styles.sidebar} ${isOpen ? styles.open : styles.closed}`}>
+    <div
+      className={`${styles.sidebar} ${isOpen ? styles.open : styles.closed}`}
+    >
       <button onClick={toggle} className={styles.toggleButton}>
         <FiMenu size={24} />
       </button>
-      {<ul>
-        <li>hola</li>
-        <li>que mas</li>
-        <li>como</li>
-        <li>te ha ido</li>
-      </ul>
-      }
+      <h1>hi</h1>
     </div>
   );
 }
 
 Sidebar.propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    toggle: PropTypes.func.isRequired
-  };
+  isOpen: PropTypes.bool.isRequired,
+  toggle: PropTypes.func.isRequired,
+};

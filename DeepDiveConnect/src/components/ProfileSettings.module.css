@@ -1,32 +1,32 @@
 .settings {
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    width: 300px;
-    background: blue;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    z-index: 1000;
-  }
-  
-  .settings.closed {
-    transform: translateX(100%);
-  }
-  
-  .toggleButton {
-    position: absolute;
-    left: -50px;
-    top: 20px;
-    background: blue;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    cursor: pointer;
-  }
-  
-  /* Add hover effect */
-  .toggleButton:hover {
-    background: #f5f5f5;
-  }
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background: #2A4B7C;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.settings.closed {
+  transform: translateX(100%);
+}
+
+.toggleButton {
+  position: relative;
+  left: -50px;
+  top: 20px;
+  background: #2A4B7C;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Add hover effect */
+.toggleButton:hover {
+  background: #E6E6FA;
+}

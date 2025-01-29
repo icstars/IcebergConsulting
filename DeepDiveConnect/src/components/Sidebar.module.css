@@ -4,7 +4,7 @@
     top: 0;
     height: 100vh;
     width: 250px;
-    background: red;
+    background: #2A4B7C;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     z-index: 1000;
@@ -18,7 +18,7 @@
     position: absolute;
     right: -50px;
     top: 20px;
-    background: red;
+    background: #2A4B7C;
     border: none;
     padding: 10px;
     border-radius: 50%;
@@ -28,5 +28,5 @@
   
   /* Add hover effect */
   .toggleButton:hover {
-    background: #f5f5f5;
+    background: #E6E6FA;
   }

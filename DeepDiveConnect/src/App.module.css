@@ -1,6 +1,7 @@
 .appContainer {
-    display: contents;
-    min-height: 100vh;
+    display: flexbox;
+    min-height: 80px;
+    background-color: #F4F2FF;
 }
 
 .mainContent {

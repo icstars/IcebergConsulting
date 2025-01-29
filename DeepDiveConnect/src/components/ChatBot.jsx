@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import styles from './ChatBot.module.css';
+import { useEffect, useRef } from "react";
+import styles from "./ChatBot.module.css";
 
 const ChatBot = () => {
   const iframeRef = useRef(null);
@@ -8,14 +8,14 @@ const ChatBot = () => {
   useEffect(() => {
     const handleMessage = (event) => {
       // Verify the origin is trusted
-      if (event.origin !== 'https://copilotstudio.microsoft.com') return;
-      
+      if (event.origin !== "https://copilotstudio.microsoft.com") return;
+
       // Handle messages from Copilot iframe
-      console.log('Message from iframe:', event.data);
+      console.log("Message from iframe:", event.data);
     };
 
-    window.addEventListener('message', handleMessage);
-    return () => window.removeEventListener('message', handleMessage);
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
   }, []);
 
   return (
