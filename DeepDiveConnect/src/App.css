@@ -29,13 +29,16 @@
 .contact-card {
   border-style: solid;
   border-radius: 15px;
-  border-color: #000;
-  background-color: red;
 }
 
 .location-card {
   border-style: solid;
   border-radius: 15px;
+}
+
+/* CSS for Sidebar Buttons */
+.body-content {
+  align-content: center;
 }
 
 .card {
@@ -55,4 +58,45 @@
 
 .rightNav{
     align-items: center;
+}
+
+.appContainer {
+    display: contents;
+    min-height: 100vh;
+    background-color: blue;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 10%;
+    /* matches sidebar width */
+    margin-right: 10%;
+    /* matches settings width */
+    transition: all 0.3s ease;
+}
+
+/* Adjust margins when sidebars are closed */
+.mainContent:has(+ .settings.closed) {
+    margin-right: 0;
+}
+
+.sidebar.closed~.mainContent {
+    margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .settings {
+        width: 250px;
+    }
+
+    .mainContent {
+        margin-left: 10%px;
+        margin-right: 10%px;
+        padding: 1rem;
+    }
 }

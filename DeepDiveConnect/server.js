@@ -6,7 +6,7 @@ const app = express();
 
 
 const port = 3000;
-app.use(cors({origin: 'http://localhost:5174' }));
+app.use(cors({origin: 'http://localhost:5175' }));
 
 //Connect to mySQL database
 const db = mysql.createConnection({
@@ -14,7 +14,7 @@ const db = mysql.createConnection({
     user: 'test',
     port: 3306,
     password: 'test',
-    database: 'test',
+    database: 'thresholds',
 });
 
 //Connection status message
@@ -31,18 +31,17 @@ app.get('/', (req, res) => {
     res.send('Home');
 })
 
-app.get('/locations', (req, res) => {
-    res.send('Locations');
+app.get('/employees', (req, res) => {
+    const query = 'SELECT * from thresholds.employees'
+    db.query(query, (err, results) => {
+        if (err) {
+            console.error('Error retrieving tasks', err);
+        } else {
+            console.log(typeof(results));
+            res.json(results);
+        }
+    });
 })
-
-app.get('/contacts', (req, res) => {
-    res.send('Contact Cards');
-})
-
-app.get('/resources', (req, res) => {
-    res.send('Resources');
-})
-
 
 //Start the app
 app.listen(port, () => {

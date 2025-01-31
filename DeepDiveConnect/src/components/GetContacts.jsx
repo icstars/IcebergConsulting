@@ -7,13 +7,16 @@ function GetContacts() {
 
     useEffect(() => {
         async function getAllContacts() {
-            let response = await fetch('http://localhost:3000/contacts');
+            let response = await fetch('http://localhost:3000/employees');
             let contacts = await response.json();
 
-            let newContactList = contacts.map(e =>
-                <ContactCard firstName={e.first_name}
-                    lastName={e.last_name}
-                    department={e.department}
+            let newContactList = contacts.map(c =>
+                <ContactCard displayName={c.display_name}
+                    jobTitle={c.job_title}
+                    programName={c.program_name}
+                    email={c.email}
+                    businessPhone={c.business_phone}
+
                 />
             )
             setContactList(newContactList);

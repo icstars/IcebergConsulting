@@ -1,11 +1,13 @@
 import React from "react";
 
-function ContactCard({firstName, lastName, department}) {
+function ContactCard({displayName, jobTitle, programName, email, businessPhone}) {
     return (
         <div className="contact-card">
-            <p>First name: {firstName}</p>
-            <p>Last name: {lastName}</p>
-            <p>Department: {department}</p>
+            <p>Name: {displayName}</p>
+            <p>Role: {jobTitle}</p>
+            <p>Program: {programName}</p>
+            <p>Email: {email}</p>
+            <p>Phone: {businessPhone}</p>
         </div>
     )
 

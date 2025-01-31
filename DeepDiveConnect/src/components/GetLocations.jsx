@@ -7,12 +7,13 @@ function GetLocations() {
 
     useEffect(() => {
         async function getAllLocations() {
-            let response = await fetch('http://localhost:3000/contacts');
+            let response = await fetch('http://localhost:3000/employees');
             let locations = await response.json();
 
             let newLocationList = locations.map(l =>
-                <LocationCard location={l.location}
-                    address={l.address}
+                <LocationCard programName={l.program_name}
+                    address ={l.street_address}
+
                 />
             )
             setLocationList(newLocationList);
@@ -26,6 +27,7 @@ function GetLocations() {
 
     return (
         <>
+            <h1>Locations</h1>
             <div>
                 <ul>
                     {locationList}

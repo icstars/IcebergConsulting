@@ -1,13 +1,13 @@
 import React from "react";
 
-function LocationCard({location, address}) {
+function LocationCard({programName, address}) {
     return (
         <div className="location-card">
-            <p>Location: {location}</p>
+            <p>Program: {programName}</p>
             <p>Address: {address}</p>
-            <p></p>
         </div>
     )
+
 }
 
 export default LocationCard;
