@@ -1,6 +1,19 @@
 * {
-  box-sizing: border-box;
+  box-sizing:content-box;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  display: contents;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+
+.chatchat{
+  display:flex;
+  height: 85vh;
+  width: 99.8%;
 }

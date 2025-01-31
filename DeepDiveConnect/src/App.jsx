@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./App.module.css";
 import { Navbar } from "./components/Navbar";
 import ChatBot from "./pages/home";
 import Contacts from "./pages/contacts";

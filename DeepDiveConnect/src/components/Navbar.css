@@ -1,13 +1,13 @@
 .active{
-    background-color: #1d4ed8;
+    background-color: #2A4B7C;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f172a;
-    color: white;
+    background-color: #7F95C4;
+    color: #9673B9;
     position: sticky;
     top: 0;
 }
@@ -31,14 +31,14 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: #E6E6FA;
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
 }
 
 nav ul li a:not(.active):hover {
-    background-color:#172554 ;
+    background-color:#2A4B7C ;
 }
 
 nav .menu {
@@ -89,4 +89,8 @@ nav .menu span {
     nav ul li a {
         margin: 0.2rem 0.5rem;
     }
+}
+
+.logo{
+    height: 50px;
 }

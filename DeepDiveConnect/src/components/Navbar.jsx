@@ -9,7 +9,10 @@ export const Navbar = () => {
   return (
     <nav>
       <Link to="/" className="title">
-        Website
+        <img className="logo"
+        src="./public/Images/ddclogosvg.svg"
+        alt ="Logo Deep Dive"
+        />
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
