@@ -1,5 +1,5 @@
 .appContainer {
-    display: flexbox;
+    display: contents;
     min-height: 80px;
     background-color: #F4F2FF;
 }
@@ -8,13 +8,13 @@
     flex: 1;
     padding: 2rem;
     margin-left: 10%;
-    /* matches sidebar width */
+
     margin-right: 10%;
-    /* matches settings width */
+
     transition: all 0.3s ease;
 }
 
-/* Adjust margins when sidebars are closed */
+
 .mainContent:has(+ .settings.closed) {
     margin-right: 0;
 }
