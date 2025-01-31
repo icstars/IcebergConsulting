@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.module.css";
 import { Navbar } from "./components/Navbar";
 import ChatBot from "./pages/home";

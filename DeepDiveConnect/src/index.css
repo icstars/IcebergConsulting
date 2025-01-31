@@ -12,8 +12,28 @@
   width: 100%;
 }
 
-.chatchat{
+/* .chatchat{
   display:flex;
   height: 85vh;
-  width: 99.8%;
+  width: 100%;
+  border-radius: 10px;
+} */
+
+.boxhome {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 1%;
+}
+
+.chatchat {
+  width: 95%; /* Adjust width */
+  height: 85vh; /* Adjust height */
+  border: none; /* Remove default iframe border */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow */
+  background: transparent; /* Make iframe background transparent (if supported) */
+  bottom: 20px; /* Distance from bottom */
+  right: 20px; /* Distance from right */
+  z-index: 9999; /* Ensure it's above other elements */
 }

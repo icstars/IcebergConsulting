@@ -9,10 +9,7 @@ export const Navbar = () => {
   return (
     <nav>
       <Link to="/" className="title">
-        <img className="logo"
-        src="./public/Images/ddclogosvg.svg"
-        alt ="Logo Deep Dive"
-        />
+        <img className="logo" src="./Images/ddlogo.png" alt="Logo Deep Dive" />
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
@@ -20,14 +17,30 @@ export const Navbar = () => {
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
-        <li>
-          <NavLink to="/contacts">Contacts</NavLink>
+        <li className="selection">
+          <NavLink to="/contacts">
+            <img className="icon" src="./Images/contacts.svg" alt="resources" />
+            <br></br>
+            <p>Contacts</p>
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/location">Locations</NavLink>
+          <NavLink to="/location">
+            <img className="icon" src="./Images/location.svg" alt="resources" />
+            <br></br>
+            <p>Locations</p>
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/resources">Resources</NavLink>
+          <NavLink to="/resources">
+            <img
+              className="iconbook"
+              src="./Images/resources.svg"
+              alt="resources"
+            />
+            <br></br>
+            <p>Resources</p>
+          </NavLink>
         </li>
       </ul>
     </nav>
