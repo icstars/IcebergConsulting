@@ -1,22 +1,21 @@
 .active{
-    background-color: #2A4B7C;
+    background-color: #6A9BC3;
 }
 
 nav {
-    border-left: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;           
-    background-color: #cdcadb;
+    background-color: #6A9BC3;
     color: #9673B9;
     position: sticky;
-    top: 0;
-    border-radius: 10px;         
+    top: 0; 
+    border-radius: 12px;        
 }
 
 nav .title {
-    font-size: 1.5rem;
+    font-size: 0.1rem;
     font-weight: bold;
     text-decoration: none;
     color: #9673B9;
@@ -47,19 +46,19 @@ nav ul li a:not(.active):hover {
 nav .menu {
     display: none;
     position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
+    top: 0.60rem;
+    right: 0.8rem;
     flex-direction: column;
     justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
+    width: 2rem;
+    height: 3ch;
 }
 
 nav .menu span {
     height: 0.4rem;
     width: 100%;
     background-color: #9673B9;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
 }
 
 
@@ -81,7 +80,7 @@ nav .menu span {
     }
 
     nav ul.open {
-        display: flex;
+        display:contents;
     }
 
     nav ul li {
@@ -90,27 +89,19 @@ nav .menu span {
     }
 
     nav ul li a {
-        margin: 0.2rem 0.5rem;
+        margin: 0.5rem 0.5rem;
+        
     }
 }
 
 .logo{
-    height: 50px;
+    height: 45px;
     border-radius: 50%;
-    justify-content: center; 
-    align-items: center;    
-}
+    margin-left: 10px;
+ }
 
 .icon{
     height: 30px;
     border-color: #9673B9;
-}
-
-.iconbook{
-    height: 29px;
-    border-color: #9673B9;
-}
-
-.selection{
-    align-items: end;
+    margin-right: 10px;
 }

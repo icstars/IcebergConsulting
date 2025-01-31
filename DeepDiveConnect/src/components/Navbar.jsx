@@ -17,7 +17,7 @@ export const Navbar = () => {
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
-        <li className="selection">
+        <li>
           <NavLink to="/contacts">
             <img className="icon" src="./Images/contacts.svg" alt="resources" />
             <br></br>
@@ -34,7 +34,7 @@ export const Navbar = () => {
         <li>
           <NavLink to="/resources">
             <img
-              className="iconbook"
+              className="icon"
               src="./Images/resources.svg"
               alt="resources"
             />

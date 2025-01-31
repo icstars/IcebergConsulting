@@ -12,26 +12,19 @@
   width: 100%;
 }
 
-/* .chatchat{
-  display:flex;
-  height: 85vh;
-  width: 100%;
-  border-radius: 10px;
-} */
-
 .boxhome {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center; 
   margin-top: 1%;
 }
 
 .chatchat {
-  width: 95%; /* Adjust width */
-  height: 85vh; /* Adjust height */
-  border: none; /* Remove default iframe border */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow */
+  width: 95%; 
+  height: 85vh; 
+  border: none; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background: transparent; /* Make iframe background transparent (if supported) */
   bottom: 20px; /* Distance from bottom */
   right: 20px; /* Distance from right */
