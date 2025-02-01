@@ -1,23 +1,25 @@
 .active{
-    background-color: #2A4B7C;
+    background-color: #6A9BC3;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;           
+    background-color: #6A9BC3;
     background-color: #009BDE;
     color: #9673B9;
     position: sticky;
-    top: 0;
+    top: 0; 
+    border-radius: 12px;        
 }
 
 nav .title {
-    font-size: 1.5rem;
-    margin: 1rem;
+    font-size: 0.1rem;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: #9673B9;
 }
 
 nav ul {
@@ -25,13 +27,13 @@ nav ul {
 }
 
 nav ul li {
-   list-style: none; 
+   list-style: none;
 }
 
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: #E6E6FA;
+    color: #2E5A88;
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
@@ -39,24 +41,25 @@ nav ul li a {
 
 nav ul li a:not(.active):hover {
     background-color:#2A4B7C ;
+    border-radius: 10%;
 }
 
 nav .menu {
     display: none;
     position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
+    top: 0.60rem;
+    right: 0.8rem;
     flex-direction: column;
     justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
+    width: 2rem;
+    height: 3ch;
 }
 
 nav .menu span {
     height: 0.4rem;
     width: 100%;
-    background-color: #fff;
-    border-radius: 0.2rem;
+    background-color: #9673B9;
+    border-radius: 0.3rem;
 }
 
 
@@ -74,11 +77,11 @@ nav .menu span {
         display: none;
         flex-direction: column;
         width: 100%;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.70rem;
     }
 
     nav ul.open {
-        display: flex;
+        display:contents;
     }
 
     nav ul li {
@@ -87,10 +90,19 @@ nav .menu span {
     }
 
     nav ul li a {
-        margin: 0.2rem 0.5rem;
+        margin: 0.5rem 0.5rem;
+        
     }
 }
 
 .logo{
-    height: 50px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 10px;
+ }
+
+.icon{
+    height: 30px;
+    border-color: #9673B9;
+    margin-right: 10px;
 }
