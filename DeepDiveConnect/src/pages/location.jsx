@@ -3,9 +3,48 @@ import GetLocations from '../components/GetLocations';
 
 const Location = () => {
     return (
-      <div>
-        <GetLocations />
-      </div>
+      <div className='background'>
+        <div className='card'>
+          <GetLocations />
+        </div>
+
+        <br/>
+      
+        <div className='card'>
+          <GetLocations />
+        </div>
+
+        <br/>
+      
+        <div className='card'>
+          <GetLocations />
+        </div>
+
+        <br/>
+      
+        <div className='card'>
+          <GetLocations />
+        </div>
+
+        <br/>
+      
+        <div className='card'>
+          <GetLocations />
+        </div>
+
+        <br/>
+      
+        <div className='card'>
+          <GetLocations />
+        </div>
+
+        <br/>
+      
+        <div className='card'>
+          <GetLocations />
+        </div>
+     </div>
+
     );
   };
   

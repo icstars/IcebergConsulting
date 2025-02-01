@@ -29,7 +29,6 @@ function GetLocations() {
 
     return (
         <>
-            <h1>Locations</h1>
             <div>
                 <ul>
                     {locationList}

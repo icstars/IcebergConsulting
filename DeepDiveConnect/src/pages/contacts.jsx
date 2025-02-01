@@ -4,37 +4,37 @@ const Contacts = () => {
   return (
     <div className='background'>
         <div className='display'>
-        <div className='card1'>
+        <div className='card'>
           <GetContacts />
         </div>
 
         <br/>
 
-        <div className='card2'>
+        <div className='card'>
           <GetContacts />
         </div>
 
         <br/>
 
-        <div className='card3'>
+        <div className='card'>
           <GetContacts />
         </div>
 
         <br/>
 
-        <div className='card1'>
+        <div className='card'>
           <GetContacts />
         </div>
 
         <br/>
 
-        <div className='card2'>
+        <div className='card'>
           <GetContacts />
         </div>
 
         <br/>
 
-        <div className='card3'>
+        <div className='card'>
           <GetContacts />
         </div>
 
