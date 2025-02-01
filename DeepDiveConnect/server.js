@@ -6,7 +6,7 @@ const app = express();
 
 
 const port = 3000;
-app.use(cors({origin: 'http://localhost:5175' }));
+app.use(cors({origin: 'http://localhost:5173' }));
 
 //Connect to mySQL database
 const db = mysql.createConnection({

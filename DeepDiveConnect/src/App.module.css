@@ -1,7 +1,6 @@
 .appContainer {
     display: contents;
     min-height: 80px;
-    background-color: #F4F2FF;
 }
 
 .mainContent {
@@ -36,5 +35,6 @@
         margin-left: 10%px;
         margin-right: 10%px;
         padding: 1rem;
+        
     }
 }

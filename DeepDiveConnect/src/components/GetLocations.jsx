@@ -12,7 +12,9 @@ function GetLocations() {
 
             let newLocationList = locations.map(l =>
                 <LocationCard programName={l.program_name}
-                    address ={l.street_address}
+                    address={l.street_address}
+                    city={l.city} state={l.state}
+                    zipcode={l.postal_code}
 
                 />
             )
