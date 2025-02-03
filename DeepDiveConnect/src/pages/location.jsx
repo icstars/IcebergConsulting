@@ -1,15 +1,11 @@
 import React from 'react';
-import GetLocations from '../components/GetLocations';
+import LocationSearch from '../components/LocationSearch'
 
 const Location = () => {
     return (
       <div className='background'>
-        <div className='card'>
-          <GetLocations />
-        </div>
-
+        <LocationSearch />
         <br/>
-      
      </div>
 
     );

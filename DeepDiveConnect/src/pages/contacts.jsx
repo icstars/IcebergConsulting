@@ -6,15 +6,6 @@ const Contacts = () => {
     <div className='background'>
         <ContactSearch />
         <br/>
-
-        {/* <div className='display'>
-          <div className='card'>
-            <GetContacts />
-          </div>
-
-          <br/>
-
-        </div> */}
         
       </div >
   );

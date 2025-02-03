@@ -35,13 +35,13 @@ export default function ContactSearch() {
 
     return (
         <>
-            <div id='searchForm'>
+            <div className='searchForm'>
                 <form action={submitSearch}>
                     <input id='searchbox' type='text' name='searchInput' placeholder='Search...' />
                     <input id='submitBtn' type='submit' />
                 </form>
             </div>
-            <div id='searchResults'>
+            <div className='searchResults'>
                 <ul>
                     {contactCards}
                 </ul>

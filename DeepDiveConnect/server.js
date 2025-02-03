@@ -26,11 +26,6 @@ db.connect((err) => {
     console.log('Connected to the database');
 });
 
-//Routes
-app.get('/', (req, res) => {
-    res.send('Home');
-})
-
 app.get('/employees', (req, res) => {
     const query = 'SELECT * from thresholds.employees'
     db.query(query, (err, results) => {
@@ -44,8 +39,8 @@ app.get('/employees', (req, res) => {
     });
 })
 
-app.get('/employees/:location', (req, res) => {
-    const query = `SELECT * from thresholds.employees WHERE office_location LIKE '%${req.params.location}%'`;
+app.get('/employees/:search', (req, res) => {
+    const query = `SELECT * from thresholds.employees WHERE display_name OR office_location OR program_name OR city LIKE '%${req.params.search}%'`;
     console.log(req.params);
     db.query(query, (err, results) => {
         if (err) {
@@ -57,6 +52,7 @@ app.get('/employees/:location', (req, res) => {
         }
     });
 })
+
 
 //Start the app
 app.listen(port, () => {
