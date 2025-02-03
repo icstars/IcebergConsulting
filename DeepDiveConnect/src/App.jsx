@@ -6,7 +6,6 @@ import ChatBot from "./pages/home";
 import Contacts from "./pages/contacts";
 import Location from "./pages/location";
 import Resources from "./pages/resources";
-import SearchBar from "./components/SearchBar";
 
 function App() {
   return (

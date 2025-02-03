@@ -1,44 +1,20 @@
+import ContactSearch from "../components/ContactSearch";
 import GetContacts from "../components/GetContacts";
 
 const Contacts = () => {
   return (
     <div className='background'>
-        <div className='display'>
-        <div className='card'>
-          <GetContacts />
-        </div>
-
+        <ContactSearch />
         <br/>
 
-        <div className='card'>
-          <GetContacts />
-        </div>
+        {/* <div className='display'>
+          <div className='card'>
+            <GetContacts />
+          </div>
 
-        <br/>
+          <br/>
 
-        <div className='card'>
-          <GetContacts />
-        </div>
-
-        <br/>
-
-        <div className='card'>
-          <GetContacts />
-        </div>
-
-        <br/>
-
-        <div className='card'>
-          <GetContacts />
-        </div>
-
-        <br/>
-
-        <div className='card'>
-          <GetContacts />
-        </div>
-
-        </div>
+        </div> */}
         
       </div >
   );

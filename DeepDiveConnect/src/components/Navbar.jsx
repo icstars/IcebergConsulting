@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
-import SearchBar from "./SearchBar";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +11,6 @@ export const Navbar = () => {
       <Link to="/" className="title">
         <img className="logo" src="./src/assets/Images/ddlogo.png" alt="Logo Deep Dive" />
       </Link>
-      <SearchBar />
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>

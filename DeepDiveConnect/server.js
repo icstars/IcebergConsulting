@@ -35,7 +35,8 @@ app.get('/employees', (req, res) => {
     const query = 'SELECT * from thresholds.employees'
     db.query(query, (err, results) => {
         if (err) {
-            console.error('Error retrieving tasks', err);
+            console.error('Error retrieving employees', err);
+            res.status(500).json({ error: 'Error retrieving employees'})
         } else {
             console.log(typeof(results));
             res.json(results);
@@ -44,10 +45,12 @@ app.get('/employees', (req, res) => {
 })
 
 app.get('/employees/:location', (req, res) => {
-    const query = `SELECT * from thresholds.employees WHERE office_location LIKE '%${req.params.location}%';`
+    const query = `SELECT * from thresholds.employees WHERE office_location LIKE '%${req.params.location}%'`;
+    console.log(req.params);
     db.query(query, (err, results) => {
         if (err) {
-            console.error('Error retrieving tasks', err);
+            console.error('Error retrieving employees', err);
+            res.status(500).json({ error: 'Error retrieving employees'})
         } else {
             console.log(typeof(results));
             res.json(results);
