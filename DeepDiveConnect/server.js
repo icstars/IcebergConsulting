@@ -43,6 +43,18 @@ app.get('/employees', (req, res) => {
     });
 })
 
+app.get('/employees/:location', (req, res) => {
+    const query = `SELECT * from thresholds.employees WHERE office_location LIKE '%${req.params.location}%';`
+    db.query(query, (err, results) => {
+        if (err) {
+            console.error('Error retrieving tasks', err);
+        } else {
+            console.log(typeof(results));
+            res.json(results);
+        }
+    });
+})
+
 //Start the app
 app.listen(port, () => {
     console.log(`DeepDive listening on port ${port}`)

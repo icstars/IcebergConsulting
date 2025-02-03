@@ -18,7 +18,8 @@ const ChatBot = () => {
   }, []);
 
   return (
-    <div className="boxhome">
+    <div className='background'>
+       <div className="boxhome">
       <iframe className="chatchat"
         ref={iframeRef}
         title="Microsoft Copilot"
@@ -27,6 +28,7 @@ const ChatBot = () => {
         allow="microphone; camera"
         loading="lazy"
       />
+      </div>
     </div>
   );
 };

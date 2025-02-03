@@ -15,6 +15,8 @@
 .background {
   text-align: center;
   color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
   background: rgb(10,6,34);
   background: linear-gradient(0deg, rgba(10,6,34,1) 0%, rgba(1,0,23,1) 44%, rgba(0,155,222,1) 100%);
 }
@@ -23,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center; 
-  margin-top: 1%;
+  /* margin-top: 1%; */
 }
 
 .chatchat {
@@ -42,11 +44,16 @@
   background: radial-gradient(circle, rgba(246,236,249,1) 10%, rgba(223,207,241,1) 100%);
   border-radius: 15px;
   padding: 1%;
-  margin-right: 5%;
-  margin-left: 5%;
+  max-width: 70vw;
+  margin-left: 14%;
 }
 
 .display {
+  align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+#searchbox {
+  width: 150px;
 }

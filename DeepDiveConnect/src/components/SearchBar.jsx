@@ -1,11 +1,16 @@
-import React from "react";
+import { useEffect, useState} from 'react';
 
 function SearchBar() {
+
     return (
         <>
-            <div className="input-wrapper">
-                <input placeholder="Search..." />
-                <img src="./src/assets/images/searchicon.svg" id="search-icon"/>
+            <div id='searchForm'>
+                <form>
+                    <input id='searchbox' type='text' name='searchInput' placeholder='Search...' />
+                    <input id='submitBtn' type='submit' />
+                </form>
+            </div>
+            <div id='searchResults'>
             </div>
         </>
     )
