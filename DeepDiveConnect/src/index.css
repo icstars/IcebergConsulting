@@ -1,5 +1,5 @@
 * {
-  box-sizing:content-box;
+  box-sizing: content-box;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,16 +7,25 @@
 
 .App {
   display: contents;
-  background-color: red;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  
+}
+
+.background {
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  min-height: 89vh;
+  background: rgb(10,6,34);
+  background: linear-gradient(0deg, rgba(10,6,34,1) 0%, rgba(1,0,23,1) 44%, rgba(0,155,222,1) 100%);
 }
 
 .boxhome {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center; 
-  margin-top: 1%;
+  /* margin-top: 1%; */
 }
 
 .chatchat {
@@ -29,4 +38,17 @@
   bottom: 20px; /* Distance from bottom */
   right: 20px; /* Distance from right */
   z-index: 9999; /* Ensure it's above other elements */
+}
+
+.card {
+  background: radial-gradient(circle, rgba(246,236,249,1) 10%, rgba(223,207,241,1) 100%);
+  border-radius: 15px;
+  margin-top: 4%;
+  padding: 1%;
+  max-width: 70vw;
+  margin-left: 14%;
+}
+
+#searchbox {
+  width: 150px;
 }

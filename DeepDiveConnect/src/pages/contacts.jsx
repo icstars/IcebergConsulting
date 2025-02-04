@@ -1,11 +1,13 @@
-// import React from 'react';
+import ContactSearch from "../components/ContactSearch";
+import GetContacts from "../components/GetContacts";
 
 const Contacts = () => {
   return (
-    <div>
-      <h1>Contacts</h1>
-      <p>Contacts!</p>
-    </div>
+    <div className='background'>
+        <ContactSearch />
+        <br/>
+        
+      </div >
   );
 };
 

@@ -18,16 +18,19 @@ const ChatBot = () => {
   }, []);
 
   return (
-    <div className="boxhome">
-      <iframe className="chatchat"
+    <div className='background'>
+      <div className="boxhome">
+        <iframe className="chatchat"
         ref={iframeRef}
         title="Microsoft Copilot"
         src="https://copilotstudio.microsoft.com/environments/Default-88227c99-d157-4dbe-8e33-d8b3fcc29577/bots/cr69f_ryanIa/webchat?__version__=2"
         sandbox="allow-scripts allow-same-origin"
         allow="microphone; camera"
         loading="lazy"
-      />
+        />
+      </div>
     </div>
+    
   );
 };
 
