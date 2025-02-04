@@ -26,8 +26,10 @@ db.connect((err) => {
     console.log('Connected to the database');
 });
 
+//Retrieving all columns from database table
 app.get('/employees', (req, res) => {
-    const query = 'SELECT * from thresholds.employees'
+    const query = 'SELECT * from thresholds.employees';
+    console.log(req.params);
     db.query(query, (err, results) => {
         if (err) {
             console.error('Error retrieving employees', err);
@@ -39,8 +41,9 @@ app.get('/employees', (req, res) => {
     });
 })
 
+//Retrieving data based on search in the app
 app.get('/employees/:search', (req, res) => {
-    const query = `SELECT * from thresholds.employees WHERE display_name OR office_location OR program_name OR city LIKE '%${req.params.search}%'`;
+    const query = `SELECT * from thresholds.employees WHERE display_name LIKE '%${req.params.search}%' OR program_name LIKE '%${req.params.search}%' OR street_address LIKE '%${req.params.search}%' OR job_title LIKE '%${req.params.search}%'`;
     console.log(req.params);
     db.query(query, (err, results) => {
         if (err) {
