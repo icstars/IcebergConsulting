@@ -36,8 +36,8 @@ export default function ContactSearch() {
         <>
             <div className='searchForm'>
                 <form action={submitSearch}>
-                    <input id='searchbox' type='text' name='searchInput' placeholder='Search...' />
-                    <input id='submitBtn' type='submit' />
+                    <input className='searchbox' type='text' name='searchInput' placeholder='Search...' />
+                    <input className='submitBtn' type='submit' />
                 </form>
             </div>
             <div className='searchResults'>
