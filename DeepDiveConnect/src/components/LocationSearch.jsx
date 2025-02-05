@@ -1,7 +1,7 @@
 import { useEffect, useState} from 'react';
 import LocationCard from './LocationCard';
 
-export default function ContactSearch() {
+export default function LocationSearch() {
 
     const [locationResults, setLocationResults] = useState([]);
 

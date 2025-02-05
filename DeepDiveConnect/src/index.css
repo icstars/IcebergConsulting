@@ -37,13 +37,13 @@
   z-index: 9999; /* Ensure it's above other elements */
 }
 
-.card {
-  background: #d7dbed;
+.searchCard {
+  background: #cbddf8;
   border-radius: 15px;
   margin-top: 4%;
   padding: 1%;
   max-width: 70vw;
-  margin-left: 14%;
+  position: relative;
 }
 
 .searchbox {

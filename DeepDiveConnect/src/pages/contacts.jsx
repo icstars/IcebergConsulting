@@ -1,5 +1,4 @@
 import ContactSearch from "../components/ContactSearch";
-import GetContacts from "../components/GetContacts";
 
 const Contacts = () => {
   return (

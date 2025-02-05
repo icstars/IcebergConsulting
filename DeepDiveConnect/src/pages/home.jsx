@@ -23,7 +23,7 @@ const ChatBot = () => {
         <iframe className="chatchat"
         ref={iframeRef}
         title="Microsoft Copilot"
-        src="https://copilotstudio.microsoft.com/environments/Default-88227c99-d157-4dbe-8e33-d8b3fcc29577/bots/cr69f_deepDiveConnections/webchat?__version__=2"
+        src="https://copilotstudio.microsoft.com/environments/Default-88227c99-d157-4dbe-8e33-d8b3fcc29577/bots/cr69f_connectObot/webchat?__version__=2%22"
         sandbox="allow-scripts allow-same-origin"
         allow="microphone; camera"
         loading="lazy"
