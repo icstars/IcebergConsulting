@@ -9,7 +9,6 @@
   display: contents;
   height: 100vh;
   width: 100%;
-  
 }
 
 .background {
@@ -21,12 +20,25 @@
 
 .boxhome {
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .chatchat {
   margin-top: 5px;
   width: 95%; 
+  height: 77vh; 
+  border: none; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: transparent; /* Make iframe background transparent (if supported) */
+  bottom: 20px; /* Distance from bottom */
+  right: 20px; /* Distance from right */
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+.dashboard {
+  margin-top: 5px;
+  width: 58%; 
   height: 77vh; 
   border: none; 
   border-radius: 12px; 
@@ -66,4 +78,8 @@
   border-radius: 20px;
   background-color: rgba(174,179,238,1);
   color: #ffff;
+}
+
+.topofthetop{
+  z-index: 1;
 }

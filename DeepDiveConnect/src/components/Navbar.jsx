@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav>
+    <nav className="topofthetop">
       <Link to="/" className="title">
         <img className="logo" src="./src/assets/Images/ddlogo.png" alt="Logo Deep Dive" />
       </Link>
@@ -40,6 +40,17 @@ export const Navbar = () => {
             />
             <br></br>
             <p>Resources</p>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className="hiddenMobile" to="/dashboard">
+            <img
+              className="icon"
+              src="./src/assets/Images/dashboard.png"
+              alt="dashboard"
+            />
+            <br></br>
+            <p>Dashboard</p>
           </NavLink>
         </li>
       </ul>

@@ -6,6 +6,7 @@ import ChatBot from "./pages/home";
 import Contacts from "./pages/contacts";
 import Location from "./pages/location";
 import Resources from "./pages/resources";
+import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/location" element={<Location />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/dashboard" className="dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );
