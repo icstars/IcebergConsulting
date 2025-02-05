@@ -9,7 +9,6 @@
   display: contents;
   height: 100vh;
   width: 100%;
-  
 }
 
 .background {
@@ -21,7 +20,7 @@
 
 .boxhome {
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .chatchat {
@@ -37,13 +36,26 @@
   z-index: 9999; /* Ensure it's above other elements */
 }
 
+.dashboard {
+  margin-top: 5px;
+  width: 58%; 
+  height: 77vh; 
+  border: none; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: transparent; /* Make iframe background transparent (if supported) */
+  bottom: 20px; /* Distance from bottom */
+  right: 20px; /* Distance from right */
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
 .searchCard {
-  background: #cbddf8;
+  background: #d9e9fc;
   border-radius: 15px;
-  margin-top: 4%;
+  margin-top: 5%;
+  margin-left: 12%;
   padding: 1%;
-  max-width: 70vw;
-  position: relative;
+  width: 70vw;
 }
 
 .searchbox {
@@ -59,11 +71,33 @@
 
 .submitBtn{
   width: 80px;
-  border-color: #968ec5;
+  border-color: #77709a;
   border-style: solid;
   margin-left: 10px;
   margin-top: 5px;
   border-radius: 20px;
-  background-color: rgba(174,179,238,1);
-  color: #ffff;
+  background-color: rgb(151, 158, 230);
+  color: #170e47;
+}
+
+.topofthetop{
+  z-index: 1;
+}
+
+.resources {
+  margin-left: 20%;
+  margin-right: 20%
+}
+
+@media (max-width: 480px) {
+
+  .searchCard {
+    background: #d9e9fc;
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-left: 6.5%;
+    padding: 1%;
+    width: 70vw;
+  }
+
 }

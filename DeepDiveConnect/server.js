@@ -43,7 +43,7 @@ app.get('/employees', (req, res) => {
 
 //Retrieving data based on search in the app
 app.get('/employees/:search', (req, res) => {
-    const query = `SELECT * from thresholds.employees WHERE display_name LIKE '%${req.params.search}%' OR program_name LIKE '%${req.params.search}%' OR street_address LIKE '%${req.params.search}%' OR job_title LIKE '%${req.params.search}%'`;
+    const query = `SELECT * from thresholds.employees WHERE display_name LIKE '%${req.params.search}%' OR program_name LIKE '%${req.params.search}%' OR street_address LIKE '%${req.params.search}%' OR office_location LIKE '%${req.params.search}%' OR job_title LIKE '%${req.params.search}%'`;
     console.log(req.params);
     db.query(query, (err, results) => {
         if (err) {

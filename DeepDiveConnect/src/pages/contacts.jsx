@@ -7,7 +7,6 @@ const Contacts = () => {
         <ContactSearch />
         </>
         <br/>
-        
       </div >
   );
 };

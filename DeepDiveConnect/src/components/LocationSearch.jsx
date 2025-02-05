@@ -11,6 +11,7 @@ export default function LocationSearch() {
         let newLocationCards = locationResults.map(l =>
             <LocationCard programName={l.program_name}
             address={l.street_address}
+            location={l.office_location}
             city={l.city} state={l.state}
             zipcode={l.postal_code}
 
